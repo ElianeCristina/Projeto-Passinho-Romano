@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stlpassinho.css">
+    <title>Passinho Romano</title>
+    <style>
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <main>
+        <h1><s>De</s>codifica</h1>
+        <br>
+        <br>
+        <select name="selecionar">
+            <option value disabled selected> Escolha aqui o código </option>
+            <option value="CifraDeCesar" select> Cifra de César</option>
+            <option value="base64" select> Base64 </option>
+        </select>
+        <br>
+        <br>
+        <br>
+            <div class="esconde">
+                <input type="number" min= 0 max= 25 id="caixa">
+            </div>
+        <br>
+        <br>
+        <br>
+            <button type="submit" onclick="codificar()"> Codificar </button>
+            <button type="submit" onclick = "decodificar()"> Decodificar </button>
+            <button type="reset" onclick="apagar()"> Apagar </button>
+        <br>
+        <br>
+        <br>
+        <br>
+            <textarea id= "digite" name="textArea" rows="10" cols="50" placeholder="Digite aqui seu texto para codificar"></textarea>
+            <textarea id= "codificado" name="textCode" rows="10" cols="50" disabled>Aqui estará seu texto codificado </textarea>
+        <br>
+        <br>
+            <footer>
+                - by ©Eliane Cristina Nunes Correia -
+                <br>
+                - Curso Resília - Webdev - Projeto de Encerramento do Módulo 1 - 
+                <br>
+                - "Espero no Senhor com todo o meu ser e na sua palavra ponho a minha esperança" Salmos 130:5 - 
+            </footer>
+        </main>
+    </center>
+    <script src="./passinho-romano.js"></script>
+</body>
+</html>
