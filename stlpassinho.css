@@ -24,6 +24,10 @@ h1{
     font-size: 100px;
     font-family: monospace;
 }
+.checagem{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
 
 footer {
     margin-top: 40px;
