@@ -18,10 +18,10 @@
         <h1><s>De</s>codifica</h1>
         <br>
         <br>
-        <select name="selecionar">
+        <select name+ "tipoCodigo" class="selecionar" onchange="ir()" >
             <option value disabled selected> Escolha aqui o código </option>
-            <option value="CifraDeCesar" select> Cifra de César</option>
-            <option value="base64" select> Base64 </option>
+            <option value="CifraDeCesar" id= "CifraDeCesar" select> Cifra de César</option>
+            <option value="base64" id= "base64" select> Base64 </option>
         </select>
         <br>
         <br>
@@ -31,10 +31,14 @@
             </div>
         <br>
         <br>
+        <div class="checagem">
+            <input type="radio" name= "check" id="codificar"> Codificar
+            <input type="radio" name= "check" id= "decodificar"> Decodificar
+        </div>
         <br>
-            <button type="submit" onclick="codificar()"> Codificar </button>
-            <button type="submit" onclick = "decodificar()"> Decodificar </button>
-            <button type="reset" onclick="apagar()"> Apagar </button>
+        <br>
+            <button type="reset" id= "apagar" onclick="apagar()"> Apagar </button>
+            <button type="submit" id="codar" onclick="codar()"> Sua Mensagem </button>
         <br>
         <br>
         <br>
@@ -46,7 +50,7 @@
             <footer>
                 - by ©Eliane Cristina Nunes Correia -
                 <br>
-                - Curso Resília - Webdev - Projeto de Encerramento do Módulo 1 - 
+                - Curso Resília - Webdev - Projeto Passinho Romano - Módulo 2 - 
                 <br>
                 - "Espero no Senhor com todo o meu ser e na sua palavra ponho a minha esperança" Salmos 130:5 - 
             </footer>
